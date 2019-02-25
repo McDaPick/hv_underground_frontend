@@ -2,7 +2,7 @@
   <div id="app">
     <div id="header">
     <div id = "logo">
-      <h1>HudsonValleyUnderGround</h1>
+      <h1>HudsonValleyUnddverGround</h1>
     </div>
     <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -15,6 +15,7 @@
      <router-view/>
   </div>
 </template>
+
 
 <style>
 #app {
