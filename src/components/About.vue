@@ -36,7 +36,8 @@ export default {
   methods: {
     handleClick: function() {
       let self = this
-      axios.get("http://localhost:1337/posts")
+      // axios.get("http://localhost:1337/posts")
+      axios.get("https://enigmatic-tundra-10828.herokuapp.com/posts")
       .then(function(response){
       console.log(response.data);
       self.posts = response.data;
