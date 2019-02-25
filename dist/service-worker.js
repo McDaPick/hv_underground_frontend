@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.5bf2653705255a6d5669e0d535baf24b.js"
+  "/precache-manifest.2de8ec09558727da0bf1c176eda46da6.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "hv-underground-frontend"});
