@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <div id="header">
-    <div id = "logo">
-      <h1>HudsonValleyUnddverGround</h1>
-    </div>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">Shows</router-link> |
-      <router-link to="/hello">Bands</router-link> |
-      <router-link to="/about">Venues</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container">
+      <div class="row">
+        <div id="header"class="col">
+              <p>HudsonValleyUnderGround</p>
+            </div>
+
+            <div id="nav" class="col">
+              <router-link to="/">Home</router-link> |
+              <router-link to="/about">Shows</router-link> |
+              <router-link to="/hello">Bands</router-link> |
+              <router-link to="/about">Venues</router-link> |
+              <router-link to="/about">About</router-link>
+            </div>
+
     </div>
   </div>
-     <router-view/>
-  </div>
+  <router-view/>
+</div>
 </template>
 
 
@@ -29,7 +33,7 @@
 #header{
   height: 80px;
   width: 940px;
-  padding: 0px 20px 0px 20px;
+  padding: 35px 20px 0px 20px;
   margin: 0 auto;
 }
 
