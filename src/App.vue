@@ -27,7 +27,8 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    text-align: center;
-   color: #2c3e50;
+   color: white;
+   background-color: black;
 }
 
 #header{
@@ -48,11 +49,11 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
 
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  background-color: red;
 }
 </style>
