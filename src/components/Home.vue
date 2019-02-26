@@ -1,8 +1,16 @@
 <template>
-  <div class="hello">
-    <!-- <button id="btn" class="" v-on:click="handleClick">Posts</button> -->
+  <div class="home">
+          <!-- <div id="homeslider" class="col-md">    -->
+              <vue-flux
+                   :options="fluxOptions"
+                   :images="fluxImages"
+                   :transitions="fluxTransitions"
+                   ref="slider">
+              <flux-pagination slot="pagination"></flux-pagination>
+              </vue-flux>
 
-
+              <button @click="$refs.slider.showImage('next')">NEXT</button>
+        <!-- </div> -->
         <div id ="shoutout" class="container">
               <div class = "row">
                 <div class = "col-sm">
@@ -29,12 +37,32 @@
 
 <script>
 import axios from 'axios'
+import { VueFlux, FluxPagination, Transitions } from 'vue-flux';
+
 
 export default {
   name: 'Home',
+  components: {
+    VueFlux,
+    FluxPagination
+ },
+
   data () {
        return {
-           quicksections:[]
+           quicksections:[],
+           fluxOptions: {
+           autoplay: true,
+           height:'500px'
+
+      },
+      fluxImages: [
+         './slides/1.jpg',
+         './slides/2.jpg',
+         './slides/3.jpg'
+      ],
+      fluxTransitions: {
+         transitionBook: Transitions.transitionBook
+          }
          }
      },
   props: {
@@ -48,19 +76,28 @@ export default {
       console.log(response.data);
       self.quicksections = response.data;
     })},
-  // methods: {
-  //   created: function() {
-  //     let self = this
-  //     axios.get("http://localhost:1337/quicksections")
-  //     //axios.get("https://enigmatic-tundra-10828.herokuapp.com/posts")
-  //     .then(function(response){
-  //     console.log(response.data);
-  //     self.quicksections = response.data;
-  //     // console.log(self.posts);
-  //   })
-  // },
-
   }
+
+//
+//
+// import { VueFlux, FluxPagination, Transitions } from 'vue-flux';
+//
+// export default {
+//    components: {
+//       VueFlux,
+//       FluxPagination
+//    },
+//
+//    data: () => ({
+//       fluxOptions: {
+//          autoplay: true
+//       },
+//       fluxImages: [ 'URL1', 'URL2', 'URL3' ],
+//       fluxTransitions: {
+//          transitionBook: Transitions.transitionBook
+//       }
+//    })
+// }
 
 
 
