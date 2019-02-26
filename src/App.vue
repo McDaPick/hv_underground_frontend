@@ -17,6 +17,48 @@
     </div>
   </div>
   <router-view/>
+  <div id=footer class="container">
+    <div class="row">
+        <div class = "col-sm">
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          </ul>
+        </div>
+        <div class = "col-sm">
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+        </div>
+        <div class = "col-sm">
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+        </div>
+        <div class = "col-sm">
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> A Link </a></li>
+        </div>
+    </div>
+
+  </div>
 </div>
 </template>
 
@@ -55,5 +97,12 @@
 
 #nav a.router-link-exact-active {
   background-color: red;
+}
+
+#footer{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  list-style-type: none;
+
 }
 </style>

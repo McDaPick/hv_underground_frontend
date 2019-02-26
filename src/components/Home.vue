@@ -9,8 +9,9 @@
               <flux-pagination slot="pagination"></flux-pagination>
               </vue-flux>
 
-              <button @click="$refs.slider.showImage('next')">NEXT</button>
+              <!-- <button @click="$refs.slider.showImage('next')">NEXT</button> -->
         <!-- </div> -->
+
         <div id ="shoutout" class="container">
               <div class = "row">
                 <div class = "col-sm">
@@ -23,6 +24,7 @@
 <div class="container">
       <div class = "row">
         <div v-for="section in quicksections" class="col-sm">
+            <img :src= "section.ImageURL">
             <p> {{ section.Title }} </p>
             <p> {{ section.Abstract }} </p>
         </div>
@@ -61,7 +63,8 @@ export default {
          './slides/3.jpg'
       ],
       fluxTransitions: {
-         transitionBook: Transitions.transitionBook
+         transitionFade: Transitions.transitionFade
+
           }
          }
      },
@@ -109,6 +112,7 @@ export default {
 #shoutout{
   border-top: 1px solid white;
   border-bottom: 1px solid white;
+      padding: 10px;
 }
 
 
