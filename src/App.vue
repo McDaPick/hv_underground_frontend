@@ -65,7 +65,8 @@
    -moz-osx-font-smoothing: grayscale;
    text-align: center;
    color: white;
-   background-color: black; 
+   background-color: black;
+   
 }
 
 #header{
