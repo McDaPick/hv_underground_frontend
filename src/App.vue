@@ -48,7 +48,7 @@
           <li><a href="Google.com"> A Link </a></li>
         </div>
         <div class = "col-sm">
-          <li><a href="Google.com"> A Link </a></li>
+          <li<p> Contact Us </p></li>
           <li><a href="Google.com"> A Link </a></li>
           <li><a href="Google.com"> A Link </a></li>
           <li><a href="Google.com"> A Link </a></li>

@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm">
           <!-- <div id="homeslider" class="col-md">    -->
               <vue-flux
                    :options="fluxOptions"
@@ -8,7 +11,9 @@
                    ref="slider">
               <flux-pagination slot="pagination"></flux-pagination>
               </vue-flux>
-
+</div>
+</div>
+</div>
               <!-- <button @click="$refs.slider.showImage('next')">NEXT</button> -->
         <!-- </div> -->
 
@@ -54,13 +59,15 @@ export default {
            quicksections:[],
            fluxOptions: {
            autoplay: true,
-           height:'500px'
+           height:'500px',
+           bindKeys: true,
+           enableGestures: true
 
       },
       fluxImages: [
-         './slides/1.jpg',
-         './slides/2.jpg',
-         './slides/3.jpg'
+         './slides/beartooth.jpg',
+         './slides/haveheart.jpg',
+         './slides/wonderyears.jpg'
       ],
       fluxTransitions: {
          transitionFade: Transitions.transitionFade
