@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class = "container">
+    <div id="slider" class = "container">
       <div class = "row">
         <div class = "col-sm">
           <!-- <div id="homeslider" class="col-md">    -->
@@ -26,12 +26,13 @@
             </div>
 
 
-<div class="container">
+<div id="quicksections" class="container">
       <div class = "row">
-        <div v-for="section in quicksections" class="col-sm">
+        <div v-for="section in quicksections" id="quicksectionsColumn" class="col-sm">
             <img :src= "section.ImageURL">
             <p> {{ section.Title }} </p>
             <p> {{ section.Abstract }} </p>
+            <a href="">Read More</a>
         </div>
       </div>
     </div>
@@ -117,10 +118,30 @@ export default {
 <style scoped>
 
 #shoutout{
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #202020;
+  border-bottom: 1px solid #202020;
       padding: 10px;
 }
 
+#quicksections{
+      padding: 20px 0 0 0;
+}
+
+#quicksectionsColumn > img:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#quicksectionsColumn > a{
+  color:white;
+}
+
+#quicksectionsColumn > a:hover{
+  background-color: #E50E07;
+}
+
+#slider{
+      padding-bottom: 20px;
+}
 
 </style>

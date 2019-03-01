@@ -8,9 +8,9 @@
 
             <div id="nav" class="col">
               <router-link to="/">Home</router-link> |
-              <router-link to="/about">Shows</router-link> |
-              <router-link to="/hello">Bands</router-link> |
-              <router-link to="/about">Venues</router-link> |
+              <router-link to="/shows">Shows</router-link> |
+              <router-link to="/bands">Bands</router-link> |
+              <router-link to="/venue">Venues</router-link> |
               <router-link to="/about">About</router-link>
             </div>
 
@@ -20,45 +20,40 @@
   <div id=footer class="container">
     <div class="row">
         <div class = "col-sm">
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
+
           </ul>
         </div>
         <div class = "col-sm">
+          <li><p>Upcoming Shows</p></li>
           <li><a href="Google.com"> A Link </a></li>
           <li><a href="Google.com"> A Link </a></li>
           <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
+
         </div>
         <div class = "col-sm">
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
+          <li><p>About HVU</p></li>
+          <li><p>We are a really great webstie oh wow. </p></li>
+
         </div>
         <div class = "col-sm">
           <li<p> Contact Us </p></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
-          <li><a href="Google.com"> A Link </a></li>
+          <li><a href="Google.com"> Email </a></li>
+          <li><a href="Google.com"> Phone Number </a></li>
         </div>
     </div>
 
   </div>
+
+  <div id="footer-bottom" class="container">
+    <div class="row">
+        <div class = "col-sm">
+          <p> "Copyright 2018" </p>
+        </div>
+    </div>
+
+  </div>
+
+
 </div>
 </template>
 
@@ -70,7 +65,7 @@
    -moz-osx-font-smoothing: grayscale;
    text-align: center;
    color: white;
-   background-color: black;
+   background-color: black; 
 }
 
 #header{
@@ -96,13 +91,17 @@
 }
 
 #nav a.router-link-exact-active {
-  background-color: red;
+  background-color: #E50E07;
 }
 
 #footer{
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #202020;
+  border-bottom: 1px solid #202020;
   list-style-type: none;
-
+  padding-top: 20px;
 }
+
+#footer-bottom{
+}
+
 </style>
