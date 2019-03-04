@@ -8,6 +8,7 @@
                    :options="fluxOptions"
                    :images="fluxImages"
                    :transitions="fluxTransitions"
+                   :captions="fluxCaptions"
                    ref="slider">
               <flux-pagination slot="pagination"></flux-pagination>
               </vue-flux>
@@ -30,7 +31,7 @@
       <div class = "row">
         <div v-for="section in quicksections" id="quicksectionsColumn" class="col-sm">
             <img :src= "section.ImageURL">
-            <p> {{ section.Title }} </p>
+            <h2> {{ section.Title }} </h2>
             <p> {{ section.Abstract }} </p>
             <a href="">Read More</a>
         </div>
@@ -66,9 +67,15 @@ export default {
 
       },
       fluxImages: [
-         './slides/beartooth.jpg',
+         './slides/Neyer.jpg',
          './slides/haveheart.jpg',
          './slides/wonderyears.jpg'
+      ],
+
+      fluxCaptions: [
+        'Neyer!',
+        'Fire!',
+        'Wow!'
       ],
       fluxTransitions: {
          transitionFade: Transitions.transitionFade
@@ -120,25 +127,51 @@ export default {
 #shoutout{
   border-top: 1px solid #202020;
   border-bottom: 1px solid #202020;
-      padding: 10px;
+  padding: 10px;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #quicksections{
       padding: 20px 0 0 0;
 }
 
+
 #quicksectionsColumn > img:hover{
   opacity: 0.5;
   cursor: pointer;
 }
 
+#quicksectionsColumn > h2{
+  color: #909090;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0;
+  margin: 10px 0 10px 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+#quicksectionsColumn > p{
+  padding: 0 0 20px 0;
+  line-height: 20px;
+}
+
 #quicksectionsColumn > a{
   color:white;
+  border-radius: 2px 2px 2px 2px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 #quicksectionsColumn > a:hover{
   background-color: #E50E07;
 }
+
 
 #slider{
       padding-bottom: 20px;

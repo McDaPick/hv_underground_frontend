@@ -2,7 +2,7 @@
   <div id="app">
     <div class="container">
       <div class="row">
-        <div id="header"class="col">
+        <div id="header" class="col">
               <p>HudsonValleyUnderGround</p>
             </div>
 
@@ -17,26 +17,24 @@
     </div>
   </div>
   <router-view/>
-  <div id=footer class="container">
+  <div id="footer" class="container">
     <div class="row">
         <div class = "col-sm">
-
-          </ul>
         </div>
         <div class = "col-sm">
-          <li><p>Upcoming Shows</p></li>
+          <li><h2>Upcoming Shows</h2></li>
           <li><a href="Google.com"> A Link </a></li>
           <li><a href="Google.com"> A Link </a></li>
           <li><a href="Google.com"> A Link </a></li>
 
         </div>
         <div class = "col-sm">
-          <li><p>About HVU</p></li>
+          <li><h2>About HVU</h2></li>
           <li><p>We are a really great webstie oh wow. </p></li>
 
         </div>
         <div class = "col-sm">
-          <li<p> Contact Us </p></li>
+          <li><h2> Contact Us </h2></li>
           <li><a href="Google.com"> Email </a></li>
           <li><a href="Google.com"> Phone Number </a></li>
         </div>
@@ -66,7 +64,7 @@
    text-align: center;
    color: white;
    background-color: black;
-   
+
 }
 
 #header{
@@ -100,6 +98,12 @@
   border-bottom: 1px solid #202020;
   list-style-type: none;
   padding-top: 20px;
+}
+
+#footer > div > div > li> h2{
+  font-size: 20px;
+  font-weight: bold;
+  color: #909090;
 }
 
 #footer-bottom{
