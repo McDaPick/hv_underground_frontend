@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <div class="container">
+    <div id="top-header" class="container">
       <div class="row">
-        <div id="header" class="col">
-              <p>HudsonValleyUnderGround</p>
+        <div id="left-nav"class="col-sm">
+            <ul id="left-links">
+                <li class="leftnavlinks"><router-link to="/">HOME</router-link></li>
+                <li class="leftnavlinks"><router-link to="/shows">SHOWS</router-link></li>
+                <li class="leftnavlinks"><router-link to="/bands">BANDS</router-link></li>
+            </ul>
+        </div>
+        <div id="header" class="col-sm">
+              <img id="logo" src="./assets/HVULOGOBLUE.jpg">
+          </div>
+            <div id="right-nav" class="col-sm">
+              <ul id="right-links">
+                <li class="rightnavlinks"><router-link to="/venue">VENUES</router-link></li>
+                <li class="rightnavlinks"><router-link to="/about">ABOUT</router-link></li>
+                <li class="rightnavlinks"><router-link to="/about">CONTACT</router-link></li>
+              </ul>
             </div>
-
-            <div id="nav" class="col">
-              <router-link to="/">Home</router-link> |
-              <router-link to="/shows">Shows</router-link> |
-              <router-link to="/bands">Bands</router-link> |
-              <router-link to="/venue">Venues</router-link> |
-              <router-link to="/about">About</router-link>
-            </div>
-
     </div>
   </div>
   <router-view/>
@@ -68,20 +73,66 @@
 }
 
 #header{
-  height: 80px;
-  width: 940px;
-  padding: 35px 20px 0px 20px;
+  padding: 0px 20px 0px 20px;
   margin: 0 auto;
 }
 
-#logo{
-  float: left;
+#top-header{
 }
 
-#nav {
-  float:right;
-  padding-top: 35px;
+#logo{
 }
+
+.leftnavlinks{
+  display: inline;
+  margin:0 0 0 20px;
+
+}
+
+.rightnavlinks{
+  display: inline;
+  margin:0 20px 0 0;
+
+}
+
+#right-nav {
+  float:left;
+}
+
+#rightnavlist{
+  padding:0;
+}
+
+#left-links{
+  float: right;
+    padding: 110px 0px 0px 0px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+#left-links a {
+  color:#6699cc;
+}
+
+#left-links a.router-link-exact-active {
+  background-color: #fff;
+}
+
+#right-links{
+  float: left;
+    padding: 110px 0px 0px 0px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+#right-links a {
+  color:#6699cc;
+}
+
+#right-links a.router-link-exact-active {
+  background-color: #fff;
+}
+
 
 #nav a {
   font-weight: bold;
@@ -107,6 +158,27 @@
 }
 
 #footer-bottom{
+}
+
+@media (max-width: 767px) {
+  #right-links{
+    float: right;
+      padding: 0px 0px 0px 0px;
+      font-weight: bold;
+  }
+
+  #left-links{
+    float: left;
+      padding: 0px 0px 0px 0px;
+      font-weight: bold;
+      letter-spacing: 6px;
+      margin: 0px;
+  }
+  #header {
+    width: 940px;
+    padding: 0px 20px 0px 20px;
+    margin: 0 auto;
+}
 }
 
 </style>
