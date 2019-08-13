@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Hello from './views/Hello.vue'
 import Bands from './views/Bands.vue'
+import Contact from './views/Contact.vue'
 
 Vue.use(Router)
 
@@ -32,6 +33,11 @@ export default new Router({
       path: '/bands',
       name: 'bands',
       component: Bands
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
     }
   ]
 })

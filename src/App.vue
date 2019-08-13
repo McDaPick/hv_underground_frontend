@@ -2,22 +2,52 @@
   <div id="app">
     <div id="top-header" class="container">
       <div class="row">
-        <div id="left-nav"class="col-sm">
-            <ul id="left-links">
+        <div id="left-nav" class="col-sm">
+          <nav id="left-links" class="navbar navbar-expand-sm bg-light justify-content-center">
+              <!-- Links -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/shows">SHOWS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/bands">BANDS</a>
+                </li>
+              </ul>
+
+            </nav>
+            <!-- <ul id="left-links" class="text-center">
                 <li class="leftnavlinks"><router-link to="/">HOME</router-link></li>
                 <li class="leftnavlinks"><router-link to="/shows">SHOWS</router-link></li>
                 <li class="leftnavlinks"><router-link to="/bands">BANDS</router-link></li>
-            </ul>
+            </ul> -->
         </div>
         <div id="header" class="col-sm">
               <img id="logo" src="./assets/HVULOGOBLUE.jpg">
           </div>
             <div id="right-nav" class="col-sm">
-              <ul id="right-links">
+              <nav id="right-links" class="navbar navbar-expand-sm bg-light justify-content-center">
+                  <!-- Links -->
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/venue">VENUES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact">CONTACT</a>
+                    </li>
+                  </ul>
+
+                </nav>
+              <!-- <ul id="right-links">
                 <li class="rightnavlinks"><router-link to="/venue">VENUES</router-link></li>
                 <li class="rightnavlinks"><router-link to="/about">ABOUT</router-link></li>
                 <li class="rightnavlinks"><router-link to="/about">CONTACT</router-link></li>
-              </ul>
+              </ul> -->
             </div>
     </div>
   </div>
@@ -69,6 +99,7 @@
    text-align: center;
    color: white;
    background-color: black;
+   min-height: 100vh;
 
 }
 
@@ -104,10 +135,10 @@
 }
 
 #left-links{
-  float: right;
     padding: 110px 0px 0px 0px;
     font-weight: bold;
     letter-spacing: 6px;
+    background-color: #000!important;
 }
 
 #left-links a {
@@ -119,10 +150,10 @@
 }
 
 #right-links{
-  float: left;
     padding: 110px 0px 0px 0px;
     font-weight: bold;
     letter-spacing: 6px;
+    background-color: #000!important;
 }
 
 #right-links a {
@@ -149,6 +180,7 @@
   border-bottom: 1px solid #202020;
   list-style-type: none;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #footer > div > div > li> h2{
@@ -158,17 +190,16 @@
 }
 
 #footer-bottom{
+  /* border-top: 1px solid #202020; */
 }
 
 @media (max-width: 767px) {
   #right-links{
-    float: right;
       padding: 0px 0px 0px 0px;
       font-weight: bold;
   }
 
   #left-links{
-    float: left;
       padding: 0px 0px 0px 0px;
       font-weight: bold;
       letter-spacing: 6px;
