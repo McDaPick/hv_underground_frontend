@@ -37,10 +37,20 @@ export default new Router({
       component: Bands
     },
     {
+      path: '/bands/:name',
+      name: 'bands',
+      component: Detail
+    },
+    {
       path: '/detail',
       name: 'detail',
       component: Detail
     },
+    // {
+    //   path: '/detail/:id',
+    //   name: 'detail',
+    //   component: Detail
+    // },
     {
       path: '/contact',
       name: 'contact',

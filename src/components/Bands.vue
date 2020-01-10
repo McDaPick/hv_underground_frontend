@@ -3,7 +3,7 @@
         <div class="row" v-for="i in Math.ceil(bands.length / 4)">
           <div v-for="band in bands.slice((i - 1) * 4, i * 4)" id="bands-archive" class="col-sm">
             <h2> {{ band.Name }} </h2>
-              <a :href="band.id">
+              <a :href= "'bands/' + band.Name">
                 <img :src="band.PictureURL" style="width:250px;">
               </a>
           </div>
