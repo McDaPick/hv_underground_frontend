@@ -4,6 +4,8 @@ import Home from './views/Home.vue'
 import Hello from './views/Hello.vue'
 import Bands from './views/Bands.vue'
 import Contact from './views/Contact.vue'
+import Detail from './views/Detail.vue'
+
 
 Vue.use(Router)
 
@@ -33,6 +35,11 @@ export default new Router({
       path: '/bands',
       name: 'bands',
       component: Bands
+    },
+    {
+      path: '/detail',
+      name: 'detail',
+      component: Detail
     },
     {
       path: '/contact',

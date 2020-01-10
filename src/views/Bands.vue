@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p> weiner </p>
     <Bands msg=""/>
 </div>
 </template>
