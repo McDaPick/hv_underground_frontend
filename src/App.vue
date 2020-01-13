@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <div id="bg-image" class="container-fluid">
+    </div>
+    <div id="bg-sub-image" class="container">
+    </div>
+    <div id="content" class="container card">
     <div id="top-header" class="container">
       <div class="row">
         <div id="left-nav" class="col-sm">
@@ -86,7 +91,7 @@
 
   </div>
 
-
+</div>
 </div>
 </template>
 
@@ -97,10 +102,49 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    text-align: center;
-   color: white;
-   background-color: black;
-   min-height: 100vh;
+   /* color: white; */
+   /* background-color: black; */
+   /* background: url("https://images.unsplash.com/photo-1520011980943-c1c29bb73d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
+   /* min-height: 100vh;
+   box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.7); */
 
+}
+
+#bg-image{
+  /* background-color: red; */
+  background-image: url("https://images.unsplash.com/photo-1520011980943-c1c29bb73d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-sub-image{
+  /* background-color: red; */
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:8.26em;
+
+  /* background-color: rgba(0,0,0,0.4); */
+  background-image: url("https://images.unsplash.com/photo-1520011980943-c1c29bb73d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+
+  filter: blur(5px)!important;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #header{
@@ -109,6 +153,10 @@
 }
 
 #top-header{
+}
+
+#content{
+  background-color: rgba(0,0,0,0.4);
 }
 
 #logo{
@@ -138,7 +186,8 @@
     padding: 110px 0px 0px 0px;
     font-weight: bold;
     letter-spacing: 6px;
-    background-color: #000!important;
+    /* background-color: #000!important; */
+    background-color: rgba(0,0,0,0.0)!important;
 }
 
 #left-links a {
@@ -153,7 +202,8 @@
     padding: 110px 0px 0px 0px;
     font-weight: bold;
     letter-spacing: 6px;
-    background-color: #000!important;
+    /* background-color: #000!important; */
+    background-color: rgba(0,0,0,0.0)!important;
 }
 
 #right-links a {

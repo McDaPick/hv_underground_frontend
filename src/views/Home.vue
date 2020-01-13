@@ -1,5 +1,7 @@
 <template>
   <div class="home">
+    <div id="back">
+    </div>
     <Home msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
