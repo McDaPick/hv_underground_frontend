@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <div id="bg-image" class="container-fluid">
-    </div>
-    <div id="bg-sub-image" class="container">
-    </div>
+
+    <div id="bg-image" class="container-fluid"></div>
+
     <div id="content" class="container card">
     <div id="top-header" class="container">
       <div class="row">
@@ -102,6 +101,7 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    text-align: center;
+   color: white;
    /* color: white; */
    /* background-color: black; */
    /* background: url("https://images.unsplash.com/photo-1520011980943-c1c29bb73d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
@@ -119,7 +119,7 @@
   top:0px;
   left:0px;
 
-  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.7);
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -130,10 +130,10 @@
 #bg-sub-image{
   /* background-color: red; */
   position:fixed;
-  width:100%;
+  width: 1140px;
   height:100%;
   top:0px;
-  left:8.26em;
+  left:0;
 
   /* background-color: rgba(0,0,0,0.4); */
   background-image: url("https://images.unsplash.com/photo-1520011980943-c1c29bb73d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
@@ -272,6 +272,7 @@
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+  border-color: white;
 }
 
 #quicksections{
