@@ -106,10 +106,10 @@
 #bg-sub-image{
   /* background-color: red; */
   position:fixed;
-  width:100%;
+  /* width:100%; */
   height:100%;
-  top:0px;
-  left:8.26em;
+  /* top:0px; */
+  /* left:8.26em; */
 
   /* background-color: rgba(0,0,0,0.4); */
   background-image: url("https://images.unsplash.com/photo-1520011980943-c1c29bb73d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");

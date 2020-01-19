@@ -1,34 +1,35 @@
 <template>
   <div class="home">
-  <div class="container-fluid" id="photo">
-    <div class="row">
-      <img src = "https://images.unsplash.com/photo-1481886756534-97af88ccb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" style="z-index: 1000;width: 100%;">
-  </div>
-  </div>
-              <!-- <button @click="$refs.slider.showImage('next')">NEXT</button> -->
-        <!-- </div> -->
-
-        <div id ="shoutout" class="container">
-              <div class = "row">
-                <div class = "col-sm">
-                  THIS IS A BIG SHOUTOUT TO WHOEVER IS ABOUT TO USE THIS PAGE
-                </div>
-              </div>
-            </div>
-
-
-<div id="quicksections" class="container">
-      <div class = "row">
-        <div v-for="section in quicksections" id="quicksectionsColumn" class="col-sm">
-            <img :src= "section.ImageURL">
-            <h2> {{ section.Title }} </h2>
-            <p> {{ section.Abstract }} </p>
-            <a href="">Read More</a>
-        </div>
-      </div>
+    <div class="container-fluid" id="photo">
+      <div class="row">
+        <img src = "https://images.unsplash.com/photo-1481886756534-97af88ccb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" style="z-index: 1000;width: 100%;">
     </div>
+  </div>
 
-</div>
+  <div id ="featartistinfo" class="container" style="height:500px;padding-top:15px;">
+    <div class = "row">
+        <div class = "col-8" style="color:white;">
+            <p>
+              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
+              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
+              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
+              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
+              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
+              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
+              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
+
+              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
+              BIOBIOBIOBIOBIOBIOBIOBIO
+              BIOBIOBIOBIO
+
+              BIOBIOBIOBIO
+            </p>
+        </div>
+        <div class = "col-4" style="">
+            <iframe src="https://open.spotify.com/embed/album/2iiijMCcRXMZLuagGQSP9Q" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+  </div>
 </div>
 
 
