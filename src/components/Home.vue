@@ -6,10 +6,11 @@
     </div>
   </div>
 
-  <div id ="featartistinfo" class="container" style="height:500px;padding-top:15px;">
+  <div id ="featbandinfo" class="container" style="text-align:left;">
     <div class = "row">
-        <div class = "col-8" style="color:white;">
-            <p>
+        <div class = "col-8" style="padding-top:15px;background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0));color:white;">
+          <h1 style="">The Band</h1>
+            <p style="">
               BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
               BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
               BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
@@ -25,11 +26,25 @@
               BIOBIOBIOBIO
             </p>
         </div>
-        <div class = "col-4" style="">
+        <div class = "col-4" style="padding-top:15px;background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0));">
             <iframe src="https://open.spotify.com/embed/album/2iiijMCcRXMZLuagGQSP9Q" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     </div>
   </div>
+
+
+<div id="quicksections" class="container">
+      <div class = "row">
+        <div v-for="section in quicksections" id="quicksectionsColumn" class="col-sm">
+            <img :src= "section.ImageURL">
+            <h2> {{ section.Title }} </h2>
+            <p> {{ section.Abstract }} </p>
+            <a href="">Read More</a>
+        </div>
+      </div>
+    </div>
+
+</div>
 </div>
 
 
