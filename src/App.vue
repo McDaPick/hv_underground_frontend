@@ -24,10 +24,7 @@
             <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+
       </div>
     </nav>
     <!-- <div id="bg-sub-image" class="container">
@@ -301,6 +298,12 @@
   -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2);
   z-index: 1000;
+}
+
+@media (max-width: 992px) {
+  #bio{
+    text-align: center;
+  }
 }
 
 </style>

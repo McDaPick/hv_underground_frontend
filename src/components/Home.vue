@@ -1,53 +1,45 @@
 <template>
   <div class="home">
+    <link href='https://fonts.googleapis.com/css?family=Graduate' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
     <div class="container-fluid" id="photo">
       <div class="row">
         <img src = "https://images.unsplash.com/photo-1481886756534-97af88ccb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" style="z-index: 1000;width: 100%;">
     </div>
   </div>
 
-  <div id ="featbandinfo" class="container" style="text-align:left;">
+  <div id ="featbandinfo" class="container-fluid" style="text-align:left;">
     <div class = "row">
-        <div class = "col-8" style="padding-top:15px;background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0));color:white;">
-          <h1 style="">The Band</h1>
-            <p style="">
-              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
-              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
-              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
-              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
-              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
-              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
-              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
+        <div class = "col-lg-8" id="bio" style="padding-top:15px;padding-left: 35px;background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4));color:white;">
+          <h1 style="">Dirty Mike and the Bois</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <p>Gerne: Metal</p>
 
-              BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO
-              BIOBIOBIOBIOBIOBIOBIOBIO
-              BIOBIOBIOBIO
-
-              BIOBIOBIOBIO
+              </div>
+              <div class="col-4">
+                <p>Location: Cornwall, NY</p>
+              </div>
+              <div class="col-4">
+              </div>
+            </div>
+          </div>
+        <hr>
+            <p style="font-family:Gelasio; word-wrap: break-word;">
+              BioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBio
+              BioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBio
+              BioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBioBio
+              BioBioBioBioBioBio
+              Bio
             </p>
         </div>
-        <div class = "col-4" style="padding-top:15px;background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0));">
+        <div class = "col-lg-4" style="background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4)); padding-right:0px; padding-left:0px;">
             <iframe src="https://open.spotify.com/embed/album/2iiijMCcRXMZLuagGQSP9Q" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     </div>
   </div>
-
-
-<div id="quicksections" class="container">
-      <div class = "row">
-        <div v-for="section in quicksections" id="quicksectionsColumn" class="col-sm">
-            <img :src= "section.ImageURL">
-            <h2> {{ section.Title }} </h2>
-            <p> {{ section.Abstract }} </p>
-            <a href="">Read More</a>
-        </div>
-      </div>
-    </div>
-
 </div>
-</div>
-
-
 </template>
 
 <script>
