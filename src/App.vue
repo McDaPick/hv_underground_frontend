@@ -2,60 +2,37 @@
   <div id="app">
     <div id="bg-image" class="container-fluid">
     </div>
-    <div id="bg-sub-image" class="container">
-    </div>
-    <div id="content" class="container card">
-    <div id="top-header" class="container">
-      <div class="row">
-        <div id="left-nav" class="col-sm">
-          <nav id="left-links" class="navbar navbar-expand-sm bg-light justify-content-center">
-              <!-- Links -->
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="/">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/shows">SHOWS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/bands">BANDS</a>
-                </li>
-              </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Navigation</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            </nav>
-            <!-- <ul id="left-links" class="text-center">
-                <li class="leftnavlinks"><router-link to="/">HOME</router-link></li>
-                <li class="leftnavlinks"><router-link to="/shows">SHOWS</router-link></li>
-                <li class="leftnavlinks"><router-link to="/bands">BANDS</router-link></li>
-            </ul> -->
-        </div>
-        <div id="header" class="col-sm">
-              <img id="logo" src="./assets/HVULOGOBLUE.jpg">
-          </div>
-            <div id="right-nav" class="col-sm">
-              <nav id="right-links" class="navbar navbar-expand-sm bg-light justify-content-center">
-                  <!-- Links -->
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="/venue">VENUES</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/about">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/contact">CONTACT</a>
-                    </li>
-                  </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/bands">Bands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/shows">Shows</a>
+          </li>
 
-                </nav>
-              <!-- <ul id="right-links">
-                <li class="rightnavlinks"><router-link to="/venue">VENUES</router-link></li>
-                <li class="rightnavlinks"><router-link to="/about">ABOUT</router-link></li>
-                <li class="rightnavlinks"><router-link to="/about">CONTACT</router-link></li>
-              </ul> -->
-            </div>
-    </div>
-  </div>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- <div id="bg-sub-image" class="container">
+    </div> -->
+
   <router-view/>
   <div id="footer" class="container">
     <div class="row">

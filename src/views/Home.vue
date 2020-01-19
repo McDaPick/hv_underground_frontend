@@ -1,11 +1,12 @@
 <template>
   <div class="home">
-    <LoadingScreen :isLoading="isLoading" />
-      <main v-if="!isLoading">
+    <LoadingScreen :isLoading="isLoading"/>
+      <!-- <main v-if="!isLoading">
         <img width="25%" src="" /> <HelloWorld />
-      </main>
-    <div id="back">
-    </div>
+      </main> -->
+    <!-- <div id="photo">
+      <Home/>
+    </div> -->
     <Home msg="Welcome to Your Vue.js App"/>
   </div>
 </template>

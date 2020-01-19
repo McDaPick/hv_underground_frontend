@@ -1,20 +1,10 @@
 <template>
   <div class="home">
-    <div id="slider" class = "container">
-      <div class = "row">
-        <div class = "col-sm">
-          <!-- <div id="homeslider" class="col-md">    -->
-              <vue-flux
-                   :options="fluxOptions"
-                   :images="fluxImages"
-                   :transitions="fluxTransitions"
-                   :captions="fluxCaptions"
-                   ref="slider">
-              <flux-pagination slot="pagination"></flux-pagination>
-              </vue-flux>
-</div>
-</div>
-</div>
+  <div class="container-fluid" id="photo">
+    <div class="row">
+      <img src = "https://images.unsplash.com/photo-1481886756534-97af88ccb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" style="z-index: 1000;width: 100%;">
+  </div>
+  </div>
               <!-- <button @click="$refs.slider.showImage('next')">NEXT</button> -->
         <!-- </div> -->
 
