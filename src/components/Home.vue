@@ -5,6 +5,13 @@
     <div class="container-fluid" id="photo">
       <div class="row">
         <img src = "https://images.unsplash.com/photo-1481886756534-97af88ccb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" style="z-index: 1000;width: 100%;">
+        <transition appear>
+          <h1 style="position: absolute;bottom:0px;left: 0;z-index: 1000;width: 100%;color: white;font-family: 'Poppins', sans-serif; font-size: 4em;">
+            <span style="float: left;">The</span>
+            <br>
+            <span class="spacer"style="float: left;">Screaming Meemies</span>
+          </h1>
+        </transition>
     </div>
   </div>
 

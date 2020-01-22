@@ -1,5 +1,7 @@
 <template>
-  <div :class="{ loader: true, fadein: isLoading, fadeout: !isLoading }">Hudson Valley Underground</div>
+  <transition appear>
+    <div :class="{ loader: true, fadein: isLoading, fadeout: !isLoading }">Hudson Valley Underground</div>
+  </transition>
 </template>
 
 <script>
