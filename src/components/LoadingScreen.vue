@@ -14,9 +14,9 @@ export default {
 <style>
 .loader {
   background: url("https://images.unsplash.com/photo-1481886756534-97af88ccb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
-  background-position: center; /* Center the image */
- background-repeat: no-repeat; /* Do not repeat the image */
- background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
   bottom: 0;
   color: white;
   display: block;
@@ -37,8 +37,8 @@ export default {
 	animation-timing-function: ease-in;
 	animation-duration: 0.5s; */
 }
-/*
-@keyframes fadeInOpacity {
+
+/* @keyframes fadeInOpacity {
 	0% {
 		opacity: 0;
 	}
