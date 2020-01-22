@@ -12,19 +12,33 @@
     <div class = "row">
         <div class = "col-lg-8" id="bio" style="padding-top:15px;padding-left: 35px;background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4));color:white;">
           <h1 style="font-family: 'Poppins', sans-serif;">Dirty Mike and the Bois</h1>
-          <div class="container" style="font-family: 'BenchNine', sans-serif;">
+
+          <div class="container d-none d-sm-none d-md-none d-lg-block " style="font-family: 'BenchNine', sans-serif;margin-left:0px;padding-left:0px;">
             <div class="row">
-              <div class="col-4" style="padding-left: 0px;">
+              <div class="col-md-4" style="">
                 <p>Gerne: Metal</p>
 
               </div>
-              <div class="col-4" style="padding-left: 0px;">
+              <div class="col-md-4" style="">
                 <p>Location: Cornwall, NY</p>
               </div>
-              <div class="col-4">
+              <div class="col-md-4">
               </div>
             </div>
           </div>
+
+          <div class="container-fluid d-block d-sm-block d-md-block d-lg-none" style="font-family: 'BenchNine', sans-serif;margin-left:0px;padding-left:0px;">
+            <div class="row">
+              <div class="col-sm-6" style="">
+                <p>Gerne: artgaeer</p>
+
+              </div>
+              <div class="col-sm-6" style="">
+                <p>Location: Cornwall, NY</p>
+              </div>
+            </div>
+          </div>
+
         <hr style="    border-top: 1px solid white;">
             <p style="font-family: 'BenchNine', sans-serif;word-wrap: break-word;font-size:19px;">
               This is a really cool bio. This is a really cool bio. This is a really cool bio. This is a really cool bio.
