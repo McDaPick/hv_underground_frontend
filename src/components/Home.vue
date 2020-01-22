@@ -6,7 +6,7 @@
       <div class="row">
         <img src = "https://images.unsplash.com/photo-1481886756534-97af88ccb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" style="z-index: 1000;width: 100%;">
 
-          <h1 style="position: sticky;bottom:0px;left: 0;z-index: 1000;width: 100%;color: white;font-family: 'Poppins', sans-serif; font-size: 4em;float:left;padding-left: 15px;padding-bottom: 15px; padding-top:15px;" class="d-none d-sm-none d-md-none d-lg-block">
+          <h1 style="position: sticky;bottom:0px;left: 0;z-index: 1000;width: 100%;color: white;font-family: 'Poppins', sans-serif; font-size: 4em;float:left;padding-left: 30px;padding-bottom: 15px; padding-top:15px;" class="d-none d-sm-none d-md-none d-lg-block">
             <span style="float: left;">The </span>
             <br>
             <span style="float: left;">Screaming Meemies</span>
