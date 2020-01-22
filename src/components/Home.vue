@@ -6,7 +6,7 @@
       <div class="row">
         <img src = "https://images.unsplash.com/photo-1481886756534-97af88ccb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" style="z-index: 1000;width: 100%;">
 
-          <h1 style="position: sticky;bottom:0px;left: 0;z-index: 1000;width: 100%;color: white;font-family: 'Poppins', sans-serif; font-size: 4em;float:left;padding-left: 30px;padding-bottom: 15px; padding-top:15px;" class="d-none d-sm-none d-md-none d-lg-block">
+          <h1 style="position: sticky;bottom:0px;left: 0;z-index: 1000;width: 100%;color: white;font-family: 'Poppins', sans-serif; font-size: 4em;float:left;padding-left: 15px;padding-bottom: 15px; padding-top:15px;" class="d-none d-sm-none d-md-none d-lg-block">
             <span style="float: left;">The </span>
             <br>
             <span style="float: left;">Screaming Meemies</span>
@@ -29,7 +29,7 @@
 
   <div id ="featbandinfo" class="container-fluid" style="text-align:left;">
     <div class = "row">
-        <div class = "col-lg-8" id="bio" style="padding-top:15px;padding-left: 35px;background-image: linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.05));color:white;">
+        <div class = "col-lg-8" id="bio" style="padding-top:15px;padding-left: 15px;background-image: linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.05));color:white;">
           <h1 class="d-block d-sm-block d-md-block d-lg-none" style="font-family: 'Poppins', sans-serif;">Dirty Mike and the Bois</h1>
 
           <div class="container d-none d-sm-none d-md-none d-lg-block " style="font-family: 'BenchNine', sans-serif;margin-left:0px;padding-left:0px;">
