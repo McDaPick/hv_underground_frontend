@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine|News+Cycle|Poppins:700&display=swap" rel="stylesheet">
     <div id="bg-image" class="container-fluid">
     </div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
@@ -54,9 +55,9 @@
         </div>
     </div>
 
-  </div>
+  </div> -->
 
-  <div id="footer-bottom" class="container">
+  <!-- <div id="footer-bottom" class="container">
     <div class="row">
         <div class = "col-sm">
           <p> "Copyright 2018" </p>

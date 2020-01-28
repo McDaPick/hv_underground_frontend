@@ -6,17 +6,18 @@
     <div id="bands" class = "container-fluid">
       <div class="row">
         <div class="col" style="padding:25px;background-color: #f8f9fa!important;">
-          <h1> Band Archive </h1>
+          <h1 class="fade-in sticky-top"> Band Archive </h1>
+          <h5 class="fade-in-slower"> Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. </h5>
         </div>
       </div>
 
       <form>
         <div class="row" style="padding:25px;">
-          <div class="col">
+          <div class="col-sm">
             <input type="text" class="form-control" placeholder="Band Name">
           </div>
 
-          <div class="col">
+          <div class="col-sm">
             <select id="inputState" class="form-control">
               <option selected>Genre</option>
               <option>Rock</option>
@@ -25,6 +26,14 @@
               <option>Indie</option>
               <option>Metal</option>
             </select>
+          </div>
+
+          <!-- <div class="col-sm">
+            <input type="text" class="form-control" placeholder="Location">
+          </div> -->
+
+          <div class="col-sm">
+            <button style="width:100%;" type="submit" class="btn btn-primary mb-2">Submit</button>
           </div>
 
         </div>
@@ -53,12 +62,21 @@
 
 <style>
 .fade-in {
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
 }
+
+.fade-in-slower {
+  animation: fadeIn ease 7s;
+  -webkit-animation: fadeIn ease 7s;
+  -moz-animation: fadeIn ease 7s;
+  -o-animation: fadeIn ease 7s;
+  -ms-animation: fadeIn ease 7s;
+}
+
 @keyframes fadeIn {
   0% {
     opacity:0;
@@ -138,6 +156,7 @@
   transform: scale(1);
 }
 
+
 .hovereffect img {
   display: block;
   position: relative;
@@ -156,6 +175,7 @@
   text-align: center;
   position: relative;
   font-size: 29px;
+  font-family: Poppins, sans-serif;
   background-color: transparent;
   color: #FFF;
   padding: 4em 0;
@@ -183,6 +203,10 @@
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+#bands h1 {
+  font-family: Poppins, sans-serif;
 }
 
 </style>
