@@ -1,10 +1,9 @@
 <template>
-  <div id="banddetail" class = "container">
+  <div id="banddetail" class = "container-fluid">
     <div class="row">
-        <h2> {{ band }} </h2>
+        <h2 style="z-index: 1;color: white;"> {{ band }} </h2>
       </div>
     </div>
-  </div>
 </template>
 
 <script>

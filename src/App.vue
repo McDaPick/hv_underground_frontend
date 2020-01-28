@@ -31,7 +31,7 @@
     </div> -->
 
   <router-view/>
-  <div id="footer" class="container">
+  <!-- <div id="footer" class="container">
     <div class="row">
         <div class = "col-sm">
         </div>
@@ -63,9 +63,8 @@
         </div>
     </div>
 
-  </div>
+  </div> -->
 
-</div>
 </div>
 </template>
 
