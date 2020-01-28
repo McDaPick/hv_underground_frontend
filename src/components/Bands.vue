@@ -11,7 +11,7 @@
         </div>
       </div>
 
-      <form>
+      <form  @submit="checkForm">
         <div class="row" style="padding:25px;">
           <div class="col-sm">
             <input type="text" class="form-control" placeholder="Band Name">
@@ -220,6 +220,11 @@ data () {
      return {
          bands:[],
     }
+},
+  methods: {
+    checkForm: function (e) {
+      console.log("nailed it");
+      }
 },
 
 // created() {
