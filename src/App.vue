@@ -12,7 +12,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/bands">Bands</a>
@@ -32,9 +32,11 @@
     </div> -->
 
   <router-view/>
-  <!-- <div id="footer" class="container">
+
+  <div id="footer" class="container-fluid">
     <div class="row">
         <div class = "col-sm">
+          <img src="/./slides/HVULOGOBLUE.jpg">
         </div>
         <div class = "col-sm">
           <li><h2>Upcoming Shows</h2></li>
@@ -55,16 +57,16 @@
         </div>
     </div>
 
-  </div> -->
+  </div>
 
-  <!-- <div id="footer-bottom" class="container">
+  <div id="footer-bottom" class="container">
     <div class="row">
         <div class = "col-sm">
           <p> "Copyright 2018" </p>
         </div>
     </div>
 
-  </div> -->
+  </div>
 
 </div>
 </template>
@@ -204,12 +206,17 @@
   list-style-type: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  color:white;
 }
 
 #footer > div > div > li> h2{
   font-size: 20px;
   font-weight: bold;
-  color: #909090;
+  color: white;
+}
+
+#footer > div > div > li> a{
+  color: white;
 }
 
 #footer-bottom{

@@ -44,7 +44,7 @@
             <div v-for="band in bands.slice((i - 1) * 4, i * 4)" class="bands-archive col-sm">
                   <a :href= "'bands/' + band.Name">
                     <div class="hovereffect" style="cursor: pointer;">
-                      <img :src="band.PictureURL" class="img-responsive fade-in" style="width:100%;" :key="band.Name">
+                      <img :src="band.PictureURL" class="img-responsive fade-in" style="width:100%;height:100%;" :key="band.Name">
                         <div class="overlay" style="cursor: pointer;">
                           <h2> {{ band.Name }} </h2>
                             <!-- <p>
