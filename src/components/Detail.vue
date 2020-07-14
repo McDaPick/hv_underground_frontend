@@ -9,7 +9,7 @@
         <p style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;"> {{ band[0].Location }} </p>
         <p>
           <a :href="band[0].Bandcamp" target="_blank" style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;"> {{ band[0].Bandcamp }} </a>
-        </p>  
+        </p>
         <p style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;"> {{ band[0].Bio }} </p>
       </div>
     </div>
@@ -33,7 +33,8 @@ mounted() {
     let self = this
     const bandname = this.$route.params;
 
-    axios.get("http://localhost:1337/bands?Name=" + bandname.name)
+    //axios.get("http://localhost:1337/bands?Name=" + bandname.name)
+    axios.get("https://hudson-valley-underground-back.herokuapp.com/bands?Name=" + bandname.name)
     //axios.get("https://hudson-valley-underground-back.herokuapp.com/quicksections")
     .then(function(response){
     self.band = response.data
