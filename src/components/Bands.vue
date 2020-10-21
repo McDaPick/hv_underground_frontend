@@ -41,7 +41,7 @@
 
 
         <div class="row no-gutters" v-for="i in Math.ceil(bands.length / 4)">
-            <div v-for="band in bands.slice((i - 1) * 4, i * 4)" class="bands-archive col-sm">
+            <div v-for="band in bands.slice((i - 1) * 4, i * 4)" class="bands-archive col-3">
                   <a :href= "'bands/' + band.Name">
                     <div class="hovereffect" style="cursor: pointer;">
                       <img :src="band.PictureURL" class="img-responsive fade-in" style="width:100%;height:100%;" :key="band.Name">
@@ -244,8 +244,8 @@ data () {
 
 mounted() {
     let self = this
-    //axios.get("http://localhost:1337/bands")
-    axios.get("https://hudson-valley-underground-back.herokuapp.com/bands")
+    axios.get("http://localhost:1337/bands")
+    //axios.get("https://hudson-valley-underground-back.herokuapp.com/bands")
     .then(function(response){
     console.log(response.data);
     self.bands = response.data;

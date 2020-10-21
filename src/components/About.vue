@@ -1,7 +1,7 @@
 <template>
   <div class = "wow">
     <p> A rad ass website dedicated to the underground scene of the
-      hudson valley </p>
+      Hudson Valley </p>
       <p>{{ msg }}</p>
  <main>
       <button id="btn" class="" v-on:click="handleClick">Get Posts</button>
