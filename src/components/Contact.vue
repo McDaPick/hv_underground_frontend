@@ -8,6 +8,15 @@
         </div>
       </div>
     </div>
+
+    <div class="row contactfield">
+      <div class="col">
+            <div class="form-group">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScxM6TyNfiClbTGq4u9oxlhuvJtURW9z9Rvlg_fRaMMIdxAoQ/viewform?embedded=true" width="640" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+    </div
+
     <!-- <form action="">
       Requester name: <input type="text" name="rname"><br>
       Project name: <input type="text" name="pname"><br>
@@ -17,7 +26,7 @@
       Links: <input type="text" name="links"><br>
   <input type="submit" value="Submit">
 </form> -->
-<div class = "container">
+<!-- <div class = "container">
 <form id="contactform">
   <div class="row contactfield">
       <div class="col">
@@ -25,7 +34,7 @@
 
             <input type="text" class="form-control form-control-lg" id="requestname" aria-describedby="emailHelp" placeholder="Requester name">
             <!-- <small id="emailHelp" class="form-text text-muted">Your name</small> -->
-          </div>
+          <!-- </div>
     </div>
     <div class="col">
       <div class="form-group">
@@ -69,7 +78,7 @@
   </div>
 
 </form>
-</div>
+</div> --> -->
 </div>
 </template>
 
@@ -102,4 +111,65 @@
   height: 50px;
   font-size: 25px;
 }
+
+#exportLabel{
+color: white;
+}
+
+.freebirdFormviewerViewFormContent{
+  color: white!important;
+}
+
 </style>
+
+
+<script>
+
+import $ from 'jquery'
+import axios from 'axios'
+
+export default {
+name: 'Contact',
+data () {
+},
+
+mounted() {
+  $('form').on('submit', (e) => {
+    e.preventDefault();
+
+    const requestname = $('#requestname').val().trim();
+    const projectname = $('#projectname').val().trim();
+    const genre = $('#genre').val().trim();
+    const description = $('#description').val().trim();
+    const email = $('#email').val().trim();
+    const links = $('#links').val().trim();
+
+    const data = {
+        requestname,
+        projectname,
+        genre,
+        description,
+        email,
+        links
+    }
+
+    console.log(data);
+
+    axios.post('/email', { data })
+        .then(function (response) {
+          console.log('Server received our data');
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    //
+    // $.post('/email', data, funtion(){
+    //     console.log('Server received our data')
+    // });
+
+  });
+
+}}
+
+
+</script>
