@@ -120,7 +120,8 @@
             </p>
         </div>
         <div class = "col-lg-4 d-none d-lg-block" style="background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4)); padding-right:0px; padding-left:0px;">
-            <iframe src="https://open.spotify.com/embed/album/2iiijMCcRXMZLuagGQSP9Q" width="100%" height="50%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/1ZKS9vC6Kp8ttrKuOjvg8T" width="100%" height="50%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            
         </div>
     </div>
   </div>

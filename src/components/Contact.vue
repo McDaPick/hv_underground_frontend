@@ -9,13 +9,15 @@
       </div>
     </div>
 
+<div class="container">
     <div class="row contactfield">
-      <div class="col">
+      <div class="col" id="form-card">
             <div class="form-group">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScxM6TyNfiClbTGq4u9oxlhuvJtURW9z9Rvlg_fRaMMIdxAoQ/viewform?embedded=true" width="100%" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     </div>
   </div>
+</div>
 </div>
 </template>
 
@@ -47,6 +49,10 @@
   width:500px;
   height: 50px;
   font-size: 25px;
+}
+
+#form-card{
+  background-color: white;
 }
 
 #exportLabel{

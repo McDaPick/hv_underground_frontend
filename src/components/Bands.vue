@@ -14,9 +14,13 @@
       <form  @submit="checkForm">
         <div class="row" style="padding:25px;">
           <div class="col-sm">
-            <input type="text" class="form-control" placeholder="Band Name">
           </div>
-
+          <div class="col-sm">
+            <input type="text" class="form-control" id="bandsearch" placeholder="Search for a band">
+          </div>
+          <div class="col-sm">
+          </div>
+<!--
           <div class="col-sm">
             <select id="inputState" class="form-control">
               <option selected>Genre</option>
@@ -26,24 +30,26 @@
               <option>Indie</option>
               <option>Metal</option>
             </select>
-          </div>
+          </div> -->
 
           <!-- <div class="col-sm">
             <input type="text" class="form-control" placeholder="Location">
           </div> -->
 
-          <div class="col-sm">
+          <!-- <div class="col-sm">
             <button style="width:100%;" type="submit" class="btn btn-primary mb-2">Submit</button>
-          </div>
+          </div> -->
 
         </div>
       </form>
+
+      <div class="searchresults row no-gutters"></div>
 
 
         <div class="row no-gutters" v-for="i in Math.ceil(bands.length / 4)">
             <div v-for="band in bands.slice((i - 1) * 4, i * 4)" class="bands-archive col-3">
                   <a :href= "'bands/' + band.Name">
-                    <div class="hovereffect" style="cursor: pointer;">
+                    <div class="hovereffect bandsquare" style="cursor: pointer;">
                       <img :src="band.PictureURL" class="img-responsive fade-in" style="width:100%;height:100%;" :key="band.Name">
                         <div class="overlay" style="cursor: pointer;">
                           <h2> {{ band.Name }} </h2>
@@ -61,6 +67,7 @@
 
 
 <style>
+
 .fade-in {
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
@@ -226,29 +233,24 @@ data () {
       console.log("nailed it");
       }
 },
-
-// created() {
-// let ckeditor = document.createElement('script');
-// let ckeditor2 = document.createElement('script');
-// let ckeditor3 = document.createElement('script');
-//
-// ckeditor.setAttribute('src',"js/jquery.js");
-// ckeditor2.setAttribute('src',"js/plugins1.js");
-// ckeditor3.setAttribute('src',"js/functions.js");
-//
-//
-// document.head.appendChild(ckeditor);
-// document.head.appendChild(ckeditor2);
-// document.head.appendChild(ckeditor3);
-// },
-
 mounted() {
     let self = this
-    axios.get("http://localhost:1337/bands")
-    //axios.get("https://hudson-valley-underground-back.herokuapp.com/bands")
+    //axios.get("http://localhost:1337/bands")
+    axios.get("https://hudson-valley-underground-back.herokuapp.com/bands")
     .then(function(response){
     console.log(response.data);
     self.bands = response.data;
-  })},
+  })
+
+  $(document).ready(function() {
+       $("#bandsearch").on("keyup", function() {
+           var value = $(this).val().toLowerCase();
+               $(".bandsquare").filter(function() {
+                   //$(".searchresults").append($(this).toggle($(this).text().toLowerCase().indexOf(value) > -1).addClass('col-3').css("height","auto"));
+                  $(".searchresults").append($(this).closest('a').toggle($(this).text().toLowerCase().indexOf(value) > -1).closest('a').addClass('col-3').css("height","auto"));
+               });
+       });
+   });
+},
 }
 </script>
