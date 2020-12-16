@@ -47,7 +47,7 @@
 
 
         <div class="row no-gutters" v-for="i in Math.ceil(bands.length / 4)">
-            <div v-for="band in bands.slice((i - 1) * 4, i * 4)" class="bands-archive col-3">
+            <div v-for="band in bands.slice((i - 1) * 4, i * 4)" class="bands-archive col-sm-3">
                   <a :href= "'bands/' + band.Name">
                     <div class="hovereffect bandsquare" style="cursor: pointer;">
                       <img :src="band.PictureURL" class="img-responsive fade-in" style="width:100%;height:100%;" :key="band.Name">
@@ -235,8 +235,8 @@ data () {
 },
 mounted() {
     let self = this
-    //axios.get("http://localhost:1337/bands")
-    axios.get("https://hudson-valley-underground-back.herokuapp.com/bands")
+    axios.get("http://localhost:1337/bands")
+    //axios.get("https://hudson-valley-underground-back.herokuapp.com/bands")
     .then(function(response){
     console.log(response.data);
     self.bands = response.data;
@@ -247,7 +247,7 @@ mounted() {
            var value = $(this).val().toLowerCase();
                $(".bandsquare").filter(function() {
                    //$(".searchresults").append($(this).toggle($(this).text().toLowerCase().indexOf(value) > -1).addClass('col-3').css("height","auto"));
-                  $(".searchresults").append($(this).closest('a').toggle($(this).text().toLowerCase().indexOf(value) > -1).closest('a').addClass('col-3').css("height","auto"));
+                  $(".searchresults").append($(this).closest('a').toggle($(this).text().toLowerCase().indexOf(value) > -1).closest('a').addClass('col-sm-3').css("height","auto"));
                });
        });
    });
