@@ -17,9 +17,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/bands">Bands</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="/shows">Shows</a>
-          </li>
+          </li> -->
 
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
