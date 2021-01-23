@@ -15,7 +15,7 @@
             <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/bands">Bands</a>
+            <a class="nav-link" href="/bandoftheweek">Band of the Week</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="/shows">Shows</a>
@@ -38,13 +38,13 @@
         <div class = "col-sm">
           <img src="/./slides/HVULOGOBLUE.jpg">
         </div>
-        <div class = "col-sm">
+        <!-- <div class = "col-sm">
           <li><h2>Upcoming Shows</h2></li>
           <li><a href="Google.com"> A Link </a></li>
           <li><a href="Google.com"> A Link </a></li>
           <li><a href="Google.com"> A Link </a></li>
 
-        </div>
+        </div> -->
         <div class = "col-sm">
           <li><h2>About HVU</h2></li>
           <li><p>We are a really great webstie oh wow. </p></li>
@@ -52,8 +52,9 @@
         </div>
         <div class = "col-sm">
           <li><h2> Contact Us </h2></li>
-          <li><a href="Google.com"> Email </a></li>
-          <li><a href="Google.com"> Phone Number </a></li>
+          <li><p>Send us an email if you want to get in touch!</p></li>
+
+          <li>hudsonvalleyunderground@gmail.com</li>
         </div>
     </div>
 
@@ -62,7 +63,7 @@
   <div id="footer-bottom" class="container">
     <div class="row">
         <div class = "col-sm">
-          <p> "Copyright 2018" </p>
+          <p> "Copyright 2020" </p>
         </div>
     </div>
 

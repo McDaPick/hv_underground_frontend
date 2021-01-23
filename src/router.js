@@ -16,12 +16,12 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Bands
     },
     {
       path: '/home',
       name: 'home',
-      component: Home
+      component: Bands
     },
     {
       path: '/about',
@@ -37,9 +37,10 @@ export default new Router({
       component: Hello
     },
     {
-      path: '/bands',
+      path: '/bandoftheweek',
       name: 'bands',
-      component: Bands
+      meta: {title: 'sdfsdfs'},
+      component: Home
     },
     {
       path: '/bands/:name',

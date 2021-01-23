@@ -7,8 +7,8 @@
          <img src = "https://images.unsplash.com/photo-1481886756534-97af88ccb438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" style="z-index: 1000;width: 100%;">
 
           <h1 style="position: sticky;bottom:0px;left: 0;z-index: 1000;width: 100%;color: white;font-family: 'Poppins', sans-serif; font-size: 4em;float:left;padding-left: 15px;padding-bottom: 15px; padding-top:15px;" class="d-none d-sm-none d-md-none d-lg-block">
-            <span style="float: left;">The </span>
-            <br>
+            <!-- <span style="float: left;">The </span> -->
+            <!-- <br> -->
             <span style="float: left;">Screaming Meemies</span>
           </h1>
         </div>
@@ -121,7 +121,7 @@
         </div>
         <div class = "col-lg-4 d-none d-lg-block" style="background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4)); padding-right:0px; padding-left:0px;">
             <iframe src="https://open.spotify.com/embed/album/1ZKS9vC6Kp8ttrKuOjvg8T" width="100%" height="50%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            
+
         </div>
     </div>
   </div>

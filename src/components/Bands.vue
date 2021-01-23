@@ -6,10 +6,24 @@
     <div id="bands" class = "container-fluid">
       <div class="row">
         <div class="col" style="padding:25px;background-color: #f8f9fa!important;">
-          <h1 class="fade-in sticky-top"> Band Archive </h1>
-          <h5 class="fade-in-slower"> Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. Test summary. </h5>
+          <h1 class="fade-in sticky-top"> Hudson Valley Underground </h1>
+          <h5 class="fade-in-slower">
+            The Hudson Valley Region of New York is home to incredible artists. This site is dedicated to archiving the
+            underground music scene and giving attention to the hard work.
+          </h5>
         </div>
       </div>
+      
+<!--
+      <div class="row">
+        <div class="col" style="padding:25px;background-color: #f8f9fa!important;">
+          <h1 class="fade-in sticky-top"> Featured Band of the Week </h1>
+          <h5 class="fade-in-slower">
+            The Hudson Valley Region of New York is home to incredible artists. This site is dedicated to archiving the
+            underground music scene and giving attention to the hard work.
+          </h5>
+        </div>
+      </div> -->
 
       <form  @submit="checkForm">
         <div class="row" style="padding:25px;">
@@ -20,28 +34,10 @@
           </div>
           <div class="col-sm">
           </div>
-<!--
-          <div class="col-sm">
-            <select id="inputState" class="form-control">
-              <option selected>Genre</option>
-              <option>Rock</option>
-              <option>Pop</option>
-              <option>Punk</option>
-              <option>Indie</option>
-              <option>Metal</option>
-            </select>
-          </div> -->
-
-          <!-- <div class="col-sm">
-            <input type="text" class="form-control" placeholder="Location">
-          </div> -->
-
-          <!-- <div class="col-sm">
-            <button style="width:100%;" type="submit" class="btn btn-primary mb-2">Submit</button>
-          </div> -->
-
         </div>
       </form>
+
+
 
       <div class="searchresults row no-gutters"></div>
 
@@ -53,9 +49,6 @@
                       <img :src="band.PictureURL" class="img-responsive fade-in" style="width:100%;height:100%;" :key="band.Name">
                         <div class="overlay" style="cursor: pointer;">
                           <h2> {{ band.Name }} </h2>
-                            <!-- <p>
-                              <a href="#">LINK HERE</a>
-                            </p> -->
                         </div>
                     </div>
                   </a>
@@ -235,8 +228,8 @@ data () {
 },
 mounted() {
     let self = this
-    //axios.get("http://localhost:1337/bands")
-    axios.get("https://hudson-valley-underground-back.herokuapp.com/bands")
+    axios.get("http://localhost:1337/bands")
+    //axios.get("https://hudson-valley-underground-back.herokuapp.com/bands")
     .then(function(response){
     console.log(response.data);
     self.bands = response.data;
