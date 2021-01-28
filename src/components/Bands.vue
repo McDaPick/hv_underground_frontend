@@ -13,7 +13,7 @@
           </h5>
         </div>
       </div>
-      
+
 <!--
       <div class="row">
         <div class="col" style="padding:25px;background-color: #f8f9fa!important;">
@@ -231,8 +231,17 @@ mounted() {
     axios.get("http://localhost:1337/bands")
     //axios.get("https://hudson-valley-underground-back.herokuapp.com/bands")
     .then(function(response){
-    console.log(response.data);
+    //console.log(response.data);
     self.bands = response.data;
+    console.log(self.bands.length);
+
+    for(let i = self.bands.length - 1; i > 0; i--) {
+      let randomIndex = Math.floor(Math.random() * i);
+
+      let temp = self.bands[i];
+      self.bands[i] = self.bands[randomIndex];
+      self.bands[randomIndex] = temp;
+    }
   })
 
   $(document).ready(function() {
