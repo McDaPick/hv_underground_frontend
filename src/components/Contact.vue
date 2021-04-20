@@ -3,7 +3,7 @@
     <div id="contact-info" class="container-fluid">
       <div class="row">
         <div class="col"  style="padding:25px;background-color: #f8f9fa!important;">
-          <h1 class="fade-in sticky-top"> Contact Us </h1>
+          <h1 class="hvutitle fade-in sticky-top"> Contact Us </h1>
           <h5 class="fade-in-slower"> Fill out the form below to have you or your band added to the site! </h5>
         </div>
       </div>

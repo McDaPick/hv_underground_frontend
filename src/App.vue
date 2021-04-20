@@ -35,8 +35,8 @@
 
   <div id="footer" class="container-fluid">
     <div class="row">
-        <div class = "col-sm">
-          <img src="/./slides/HVULOGOBLUE.jpg">
+        <div class = "footerbox col-sm">
+          <img id="footerlogo" src="/./slides/HVULOGOBLUE.jpg">
         </div>
         <!-- <div class = "col-sm">
           <li><h2>Upcoming Shows</h2></li>
@@ -45,12 +45,17 @@
           <li><a href="Google.com"> A Link </a></li>
 
         </div> -->
-        <div class = "col-sm">
+        <div class = "footerbox footertext col-sm">
           <li><h2>About HVU</h2></li>
           <li><p>We are a really great webstie oh wow. </p></li>
 
         </div>
-        <div class = "col-sm">
+        <div class = "footerbox footertext col-sm">
+          <li><h2>About HVU</h2></li>
+          <li><p>We are a really great webstie oh wow. </p></li>
+
+        </div>
+        <div class = "footerbox footertext col-sm">
           <li><h2> Contact Us </h2></li>
           <li><p>Send us an email if you want to get in touch!</p></li>
 
@@ -60,10 +65,10 @@
 
   </div>
 
-  <div id="footer-bottom" class="container">
-    <div class="row">
-        <div class = "col-sm">
-          <p> "Copyright 2020" </p>
+  <div id="footer-bottom" class="container-fluid">
+    <div class="row-fluid">
+        <div class = "footerbox col-sm">
+          <p id="copyright"> "Copyright 2020" </p>
         </div>
     </div>
 
@@ -138,6 +143,18 @@
 #logo{
 }
 
+#footerlogo{
+  float:left;
+}
+
+.footerbox{
+  background-color: #f8f9fa;
+}
+
+.footertext{
+  padding-top: 80px;
+}
+
 .leftnavlinks{
   display: inline;
   margin:0 0 0 20px;
@@ -203,17 +220,17 @@
 
 #footer{
   border-top: 1px solid #202020;
-  border-bottom: 1px solid #202020;
+  /* border-bottom: 1px solid #202020; */
   list-style-type: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color:white;
+  padding-top: 50px;
+  /* padding-bottom: 20px; */
+  color:rgba(0,0,0,.9);
 }
 
 #footer > div > div > li> h2{
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: rgba(0,0,0,.9);
 }
 
 #footer > div > div > li> a{
@@ -222,9 +239,19 @@
 
 #footer-bottom{
   /* border-top: 1px solid #202020; */
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#copyright{
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
+  .hvutitle {
+      position: unset;
+  }
+
   #right-links{
       padding: 0px 0px 0px 0px;
       font-weight: bold;

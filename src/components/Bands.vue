@@ -6,7 +6,7 @@
     <div id="bands" class = "container-fluid">
       <div class="row">
         <div class="col" style="padding:25px;background-color: #f8f9fa!important;">
-          <h1 class="fade-in sticky-top"> Hudson Valley Underground </h1>
+          <h1 class="hvutitle fade-in sticky-top"> Hudson Valley Underground </h1>
           <h5 class="fade-in-slower">
             The Hudson Valley Region of New York is home to incredible artists. This site is dedicated to archiving the
             underground music scene and giving attention to the hard work.
