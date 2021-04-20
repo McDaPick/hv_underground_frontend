@@ -24,7 +24,7 @@ $( document ).ready(function() {
                 $("#botw").addClass("active");
               } else if(pageURL.indexOf("home") >= 0){
                 $("#home").addClass("active");
-              } else if(pageURL.indexOf("") >= 0){
+              } else if(pageURL.indexOf(" ") >= 0){
                   $("#home").addClass("active");
               } else if(pageURL.indexOf("contact") >= 0){
                 $("#contact").addClass("active");
