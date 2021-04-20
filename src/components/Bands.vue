@@ -25,7 +25,7 @@
         </div>
       </div> -->
 
-      <form  @submit="checkForm">
+      <form id="wow" onsubmit="return false">
         <div class="row" style="padding:25px;">
           <div class="col-sm">
           </div>
@@ -222,9 +222,6 @@ data () {
     }
 },
   methods: {
-    checkForm: function (e) {
-      console.log("nailed it");
-      }
 },
 mounted() {
     let self = this
@@ -245,13 +242,18 @@ mounted() {
   })
 
   $(document).ready(function() {
-       $("#bandsearch").on("keyup", function() {
+       $("#bandsearch").on("keyup", function(e) {
+         if(e.which == 13){
+            e.preventDefault();
+         } else {
            var value = $(this).val().toLowerCase();
                $(".bandsquare").filter(function() {
                    //$(".searchresults").append($(this).toggle($(this).text().toLowerCase().indexOf(value) > -1).addClass('col-3').css("height","auto"));
                   $(".searchresults").append($(this).closest('a').toggle($(this).text().toLowerCase().indexOf(value) > -1).closest('a').addClass('col-sm-3').css("height","auto"));
                });
+        }
        });
+
    });
 },
 }
