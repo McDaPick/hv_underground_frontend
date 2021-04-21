@@ -17,7 +17,7 @@ new Vue({
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    console.log( "ready!" );
+    // console.log( "ready!" );
     var pageURL = $(location).attr("href");
 
               if (pageURL.indexOf("bandoftheweek") >= 0){

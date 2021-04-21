@@ -56,23 +56,23 @@
 
         </div>
         <div class = "footerbox footertext col-sm">
-          <li><h2> Contact Us </h2></li>
-          <li><p>Send us an email if you want to get in touch!</p></li>
+            <li><h2> Contact Us </h2></li>
+            <li>Send us an email if you want to get in touch!</li>
 
-          <li>hudsonvalleyunderground@gmail.com</li>
+            <li>hudsonvalleyunderground@gmail.com</li>
         </div>
     </div>
 
   </div>
 
-  <div id="footer-bottom" class="container-fluid">
+  <!-- <div id="footer-bottom" class="container-fluid">
     <div class="row-fluid">
         <div class = "footerbox col-sm">
           <p id="copyright"> "Copyright 2020" </p>
         </div>
     </div>
 
-  </div>
+  </div> -->
 
 </div>
 </template>
@@ -222,7 +222,7 @@
   border-top: 1px solid #202020;
   /* border-bottom: 1px solid #202020; */
   list-style-type: none;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   /* padding-bottom: 20px; */
   color:rgba(0,0,0,.9);
 }
