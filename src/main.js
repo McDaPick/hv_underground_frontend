@@ -29,8 +29,7 @@ $( document ).ready(function() {
               } else if(pageURL.indexOf("contact") >= 0){
                 $("#contact").addClass("active");
               }
-    /* Code for changing active
-           link on clicking */
+    /* Code for changing active link on clicking */
            var btns =
                $("#home #botw #contact");
 

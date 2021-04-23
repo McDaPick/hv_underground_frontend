@@ -36,7 +36,7 @@
   <div id="footer" class="container-fluid">
     <div class="row">
         <div class = "footerbox col-sm">
-          <img id="footerlogo" src="/./slides/HVULOGOBLUE.jpg">
+          <img id="footerlogo" src="/./slides/HVULOGO.png">
         </div>
         <!-- <div class = "col-sm">
           <li><h2>Upcoming Shows</h2></li>
@@ -145,6 +145,7 @@
 
 #footerlogo{
   float:left;
+  width: 75%;
 }
 
 .footerbox{
