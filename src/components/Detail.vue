@@ -76,8 +76,8 @@ mounted() {
     let self = this
     const bandname = this.$route.params;
 
-    axios.get("http://localhost:1337/bands?Name=" + bandname.name)
-    //axios.get("https://hudson-valley-underground-back.herokuapp.com/bands?Name=" + bandname.name)
+    //axios.get("http://localhost:1337/bands?Name=" + bandname.name)
+    axios.get("https://hudson-valley-underground-back.herokuapp.com/bands?Name=" + bandname.name)
     //axios.get("https://hudson-valley-underground-back.herokuapp.com/quicksections")
     .then(function(response){
     self.band = response.data
