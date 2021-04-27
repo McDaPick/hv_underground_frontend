@@ -5,10 +5,30 @@
       </div>
       <div class="col-md-6">
         <h2 class=".d-sm-none .d-md-block" style="float: left; z-index: 1;color: white;font-family: Poppins, sans-serif;font-size: 85px;"> {{ band[0].Name }} </h2>
+        <div class="row" id="detailsocials">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+
+            <div class="col-4" id="social-col">
+                <div class="row">
+                  <div class="col-4">
+                    <li class="sociallist"> <img class="socialicons" src="/./slides/insta.png"> </li>
+                  </div>
+                  <div class="col-4">
+                    <li class="sociallist"> <img class="socialicons" src="/./slides/twit.png"> </li>
+                  </div>
+                  <div class="col-4">
+                    <li class="sociallist"> <img class="socialicons" src="/./slides/fb.png"> </li>
+                  </div>
+            </div>
+
+          </div>
+        </div>
       </div>
       <div class="col-md-3">
       </div>
     </div>
+
 
     <div class="row" id="detailimage">
       <div class="col-md-3">
@@ -20,25 +40,33 @@
         </div>
     </div>
 
-    <div class="row" id="detailsocials">
+
+
+
+
+    <div class = "row">
       <div class="col-4"></div>
-      <div class="col-4">
-        <ul>
-          <li class="sociallist"> Twitter </li>
-          <li class="sociallist"> Facebook </li>
-          <li class="sociallist"> Instagram </li>
-        </ul>
+      <div class="col-4" style="background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4)); padding-right:0px; padding-left:0px;">
+        <iframe src="https://open.spotify.com/embed/album/2iiijMCcRXMZLuagGQSP9Q" width="100%" height="50%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
       <div class="col-4"></div>
     </div>
 
+
     <div class="row" id="detaildetails">
       <div class="col-sm">
-          <p style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;"> {{ band[0].Location }} </p>
+          <p style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;">Location: {{ band[0].Location }} </p>
           <p>
             <a :href="band[0].Bandcamp" target="_blank" style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;"> {{ band[0].Bandcamp }} </a>
           </p>
-          <p style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;"> {{ band[0].Bio }} </p>
+          <!-- <p style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;"> {{ band[0].Bio }} </p>-->
+          <p style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;"> {Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+C/O https://placeholder.com/text/lorem-ipsum/Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+C/O https://placeholder.com/text/lorem-ipsum/Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+C/O https://placeholder.com/text/lorem-ipsum/ </p>
       </div>
     </div>
   </div>
@@ -49,6 +77,20 @@
     padding-top: 30px;
     background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.4));
   }
+
+#detailsocials{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.socialicons{
+  width: 115%;
+  cursor: pointer;
+}
+
+#social-col{
+  padding-top: 30px;
+}
 
 .sociallist{
   z-index: 1;
@@ -80,6 +122,7 @@ mounted() {
     axios.get("https://hudson-valley-underground-back.herokuapp.com/bands?Name=" + bandname.name)
     //axios.get("https://hudson-valley-underground-back.herokuapp.com/quicksections")
     .then(function(response){
+      console.log(response.data)
     self.band = response.data
     })
 }
