@@ -12,13 +12,25 @@
             <div class="col-4" id="social-col">
                 <div class="row">
                   <div class="col-4">
-                    <li class="sociallist"> <img class="socialicons" src="/./slides/insta.png"> </li>
+                    <li class="sociallist">
+                      <a :href="band[0].Instagram" target="_blank">
+                        <img class="socialicons" src="/./slides/insta.png">
+                      </a>
+                     </li>
                   </div>
                   <div class="col-4">
-                    <li class="sociallist"> <img class="socialicons" src="/./slides/twit.png"> </li>
+                    <li class="sociallist">
+                      <a :href="band[0].Twitter" target="_blank">
+                        <img class="socialicons" src="/./slides/twit.png">
+                      </a>
+                    </li>
                   </div>
                   <div class="col-4">
-                    <li class="sociallist"> <img class="socialicons" src="/./slides/fb.png"> </li>
+                    <li class="sociallist">
+                    <a :href="band[0].Facebook" target="_blank">
+                      <img class="socialicons" src="/./slides/fb.png">
+                    </a>
+                    </li>
                   </div>
             </div>
 
@@ -45,16 +57,17 @@
 
 
     <div class = "row">
-      <div class="col-4"></div>
-      <div class="col-4" style="background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4)); padding-right:0px; padding-left:0px;">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
         <iframe src="https://open.spotify.com/embed/album/2iiijMCcRXMZLuagGQSP9Q" width="100%" height="50%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
-      <div class="col-4"></div>
+      <div class="col-md-3"></div>
     </div>
 
 
     <div class="row" id="detaildetails">
-      <div class="col-sm">
+      <div class="col-3"></div>
+      <div class="col-6">
           <p style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;">Location: {{ band[0].Location }} </p>
           <p>
             <a :href="band[0].Bandcamp" target="_blank" style="z-index: 1;color: white; font-family: BenchNine, sans-serif;font-size: 24px;"> {{ band[0].Bandcamp }} </a>
@@ -68,6 +81,7 @@ C/O https://placeholder.com/text/lorem-ipsum/Lorem Ipsum dolor sit amet, consect
 
 C/O https://placeholder.com/text/lorem-ipsum/ </p>
       </div>
+      <div class="col-3"></div>
     </div>
   </div>
 </template>
@@ -84,7 +98,7 @@ C/O https://placeholder.com/text/lorem-ipsum/ </p>
 }
 
 .socialicons{
-  width: 115%;
+  width: 40px;
   cursor: pointer;
 }
 
@@ -118,8 +132,8 @@ mounted() {
     let self = this
     const bandname = this.$route.params;
 
-    //axios.get("http://localhost:1337/bands?Name=" + bandname.name)
-    axios.get("https://hudson-valley-underground-back.herokuapp.com/bands?Name=" + bandname.name)
+    axios.get("http://localhost:1337/bands?Name=" + bandname.name)
+    //axios.get("https://hudson-valley-underground-back.herokuapp.com/bands?Name=" + bandname.name)
     //axios.get("https://hudson-valley-underground-back.herokuapp.com/quicksections")
     .then(function(response){
       console.log(response.data)
