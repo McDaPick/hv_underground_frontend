@@ -172,8 +172,8 @@ export default {
   },
   mounted() {
       let self = this
-      //axios.get("http://localhost:1337/quicksections")
-      axios.get("https://hudson-valley-underground-back.herokuapp.com/quicksections")
+      axios.get("http://localhost:1337/quicksections")
+      //giaxios.get("https://hudson-valley-underground-back.herokuapp.com/quicksections")
       .then(function(response){
       console.log(response.data);
       self.quicksections = response.data;

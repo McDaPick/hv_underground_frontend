@@ -55,7 +55,7 @@
           <li><p>We are a really great webstie oh wow. </p></li>
 
         </div>
-        <div class = "footerbox footertext col-sm">
+        <div class = "footerbox footertext col-sm" id="footerlast">
             <li><h2> Contact Us </h2></li>
             <li>Send us an email if you want to get in touch!</li>
 
@@ -146,6 +146,7 @@
 #footerlogo{
   float:left;
   width: 75%;
+  margin-left: 40px;
 }
 
 .footerbox{
@@ -242,6 +243,10 @@
   /* border-top: 1px solid #202020; */
   padding-left: 0px;
   padding-right: 0px;
+}
+
+#footerlast{
+  padding-bottom: 30px;
 }
 
 #copyright{
